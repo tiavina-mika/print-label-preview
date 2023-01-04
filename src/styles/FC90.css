@@ -26,8 +26,8 @@
 #logo_container {
   text-align: center;
   /* margin: auto; */
-  width: 64px;
-  padding: 0px;
+  /* width: 64px;
+  padding: 0px; */
   margin-top: 15px;
   /* height: 10px; */
   /* background-color: green; */
@@ -37,9 +37,18 @@
 
 #logo {
   height: 100%;
-  width: 100%;
+  width: 64px;
+  /* width: 100%; */
 }
 
+#top {
+  width: 305px;
+  height: 198px;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #top_part_container {
   /* padding-top: 3mm; */
   /* height: 45mm; */

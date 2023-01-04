@@ -7,8 +7,9 @@ const App = () => {
   return (
     <main>
       <div className="in">
-        <article id="top_part_container">
+        <article>
           <Logo />
+          <div id="top">x</div>
           {/* <ProductName name={props.product.commercialName}/>
             <Preparation specialInstruction={props.product.specialInstruction}/>
             <HeatingInstruction heatingInstructions={heatingInstructions} preparation={props.product.preparation}/>
