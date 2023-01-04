@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap");
+
+main {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10mm 7%;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  clip-path: circle();
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+main > * {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+main header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 75%;
+  padding-bottom: 1mm;
+}
+
+main header img {
+  display: block;
+  margin-right: 2mm;
+  height: 8mm;
+  width: 8mm;
+  flex: 0 0 8mm;
+}
+
+main header h1 {
+  display: inline-block;
+  box-sizing: border-box;
+  width: auto;
+  width: max-content;
+  font-size: 2mm;
+  line-height: 130%;
+}
+
+main footer {
+  position: absolute;
+  bottom: 0;
+  height: 10mm;
+}
+
+main footer p {
+  font-size: 1.2mm;
+}
+
+main footer p strong {
+  font-size: 2mm;
+}
+
+main section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+main section article,
+main section .inline_wrapper,
+main footer {
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+main section article,
+main section .inline_wrapper {
+  margin: 1mm auto;
+}
+
+main section .inline_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  max-width: 95%;
+}
+
+main section article p,
+main section article p strong,
+main footer p {
+  margin: 0 auto;
+  font-size: 1.6mm;
+  line-height: 1.5;
+}
+
+main section .inline_wrapper article {
+  width: auto;
+  max-width: 65%;
+}
+
+main section hr {
+  margin: 1mm auto;
+  width: 60%;
+  border: 0.2mm solid #b0b0b0;
+}
+
+main section article #preparation_instructions {
+  max-width: 90%;
+  margin-bottom: 1mm;
+}
+
+#label_nutritional-info table {
+  text-align: left;
+}
+
+#label_nutritional-info table tbody th,
+#label_nutritional-info table thead th,
+#label_nutritional-info table tbody td {
+  white-space: nowrap;
+  font-size: 1.4mm;
+}
+
+#label_nutritional-info table thead {
+  text-transform: uppercase;
+}
+
+#label_nutritional-info table tbody th {
+  text-align: right;
+}
+
+#label_nutritional-info table thead th {
+  padding: 0 1.2mm 0.5mm;
+}
+#label_nutritional-info table tbody td {
+  padding: 0.1mm 1.2mm;
+}
+
+#label_ingredients p strong {
+  font-size: inherit;
+}
+
+#label_nutritional-info {
+  flex: 0 0 141px;
+}
+
+#label_tracking {
+  margin-left: 1mm;
+  flex: 0 0 94px;
+}
+
+#label_tracking:first-child {
+  margin-left: 70%;
+}
+
+#label_tracking #label_tracking_img {
+  column-count: 2;
+  column-gap: 1mm;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+#label_tracking #label_tracking_img > * {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  text-align: left;
+}
+
+#label_tracking #label_tracking_img #qr_code {
+  width: 12mm;
+  height: 12mm;
+  margin-bottom: 1mm;
+  display: none;
+}
+
+#label_tracking #label_tracking_img #nutriscore {
+  width: 10mm;
+  height: 5mm;
+  margin-bottom: 1mm;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#label_tracking #label_tracking_img #agreement {
+  width: 9mm;
+}
+
+#label_tracking #net_weight p {
+  text-align: left;
+  font-size: 1.2mm;
+}
+
+#label_tracking #unique-code_container {
+  text-align: left;
+  color: #5c5c5c;
+  font-family: "Roboto Mono";
+  font-size: 4.5mm;
+  margin-right: 2.5mm;
+  margin-bottom: 1mm;
+}
+
+main #address {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.hide-dlc {
+  opacity: 0;
+}

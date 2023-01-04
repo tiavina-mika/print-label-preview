@@ -1,2 +1,2 @@
-# print-label-preview
+# label-preview
 Created with CodeSandbox

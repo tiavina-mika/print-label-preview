@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap");
+
+#root {
+  /* body { */
+  width: 90mm;
+  height: 90mm;
+  font: 1em "Sailec-Regular";
+  color: #3c3c3c;
+  letter-spacing: normal;
+}
+
+.in {
+  /* width: 328px;
+  height: 328px; */
+  width: calc(90mm - 12px);
+  height: calc(90mm - 12px);
+  background-color: red;
+  /* align-self: stretch; */
+  /* flex: 1; */
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo_container {
+  text-align: center;
+  /* margin: auto; */
+  width: 64px;
+  padding: 0px;
+  margin-top: 15px;
+  /* height: 10px; */
+  /* background-color: green; */
+  /* flex: 1; */
+  /* align-self: stretch; */
+}
+
+#logo {
+  height: 100%;
+  width: 100%;
+}
+
+#top_part_container {
+  /* padding-top: 3mm; */
+  /* height: 45mm; */
+  display: flex;
+  flex-direction: column;
+}
+
+#nutrition_information_container {
+  left: 2mm;
+  padding-left: 4mm;
+  width: 23mm;
+  font-size: 1.4mm;
+  text-align: right;
+  position: absolute;
+  bottom: 8.5mm;
+  margin: unset;
+  font-family: "Sailec-Regular";
+}
+
+#nutriton_information_table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#nutrition_information_table_line {
+  height: 2.25mm;
+}
+
+#nutrition_information_value_cell {
+  width: 6mm;
+}
+
+#dlc_informations_container {
+  position: absolute;
+  bottom: 11mm;
+  font-family: "Sailec-Regular";
+  width: 18mm;
+  text-align: center;
+}
+
+#dlc_label {
+  font-family: "Sailec-Medium";
+  font-size: 1.5mm;
+  line-height: 1.5;
+}
+
+#dlc_date {
+  font-size: 2mm;
+  line-height: 1.5;
+  font-family: "Sailec-Medium";
+}
+
+#dlc_conservation {
+  font-size: 1.2mm;
+}
+
+#nutriscore_container {
+  width: 16mm;
+  height: auto;
+  bottom: 19mm;
+  position: absolute;
+}
+
+#nutriscore_image {
+  width: 100%;
+  height: 100%;
+}
+
+#kitchen_netweight_container {
+  position: absolute;
+  width: 21mm;
+  right: 8mm;
+  bottom: 17mm;
+  font-size: 1.2mm;
+  font-family: "Sailec-Regular";
+  line-height: 128%;
+}
+
+#netweight_container {
+  margin-bottom: 1mm;
+}
+
+#kitchen_address {
+  margin-bottom: 1mm;
+}
+
+#unique-code_container {
+  color: #5c5c5c;
+  position: absolute;
+  text-align: center;
+  font-family: "Roboto Mono";
+  bottom: 4mm;
+  font-size: 4.5mm;
+}
+
+#agreement_container {
+  height: 7mm;
+  width: 9mm;
+  position: absolute;
+  right: 20mm;
+  bottom: 8mm;
+}
+
+#product_name_container {
+  padding: 0px 15%;
+  text-align: center;
+  color: #151858;
+  font-family: "Sailec-Medium";
+  margin: 1mm;
+  height: auto;
+}
+
+#heating_instruction_container {
+  padding: 0px 7%;
+  text-align: center;
+  color: #151858;
+  font-size: 1.9mm;
+  margin: 0 1mm 1mm 1mm;
+  height: auto;
+  font-family: "Sailec-Regular";
+}
+
+#heating_instruction_microwave {
+  font-family: "Sailec-Bold";
+}
+
+#preparation_container {
+  text-align: center;
+  color: #151858;
+  font-size: 1.9mm;
+  font-family: "Sailec-Regular";
+  margin: 1mm 7mm;
+  height: auto;
+}
+
+#ingredients_container {
+  margin: 1mm 3mm;
+  text-align: center;
+  height: auto;
+  line-height: 1.5;
+  font-family: "Sailec-Regular";
+}
+
+#allergens_text {
+  font-family: "Sailec-Medium";
+}
