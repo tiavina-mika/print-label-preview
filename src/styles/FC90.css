@@ -72,6 +72,8 @@
   width: 67.69px;
   height: 102.5px;
   background-color: coral;
+  display: flex;
+  flex-direction: column;
 }
 
 #bottom-right {
@@ -110,26 +112,29 @@
 #nutrition_information_container strong {
   font-weight: 700;
 }
+
 #nutrition_information_container p {
   line-height: 7px;
   padding: 0;
   margin: 0;
 }
-/* width: 110px;
-height: 35px; */
 
-#nutriton_information_table {
+#nutriscore_container {
+  width: 64px;
+  height: 36px;
+}
+
+#ecoscore_container {
+  width: 66px;
+  height: 32px;
+}
+
+#ecoscore_container img {
   width: 100%;
-  table-layout: fixed;
+  height: 100%;
 }
 
-#nutrition_information_table_line {
-  height: 2.25mm;
-}
-
-#nutrition_information_value_cell {
-  width: 6mm;
-}
+/* ---------------- */
 
 #dlc_informations_container {
   position: absolute;
@@ -153,13 +158,6 @@ height: 35px; */
 
 #dlc_conservation {
   font-size: 1.2mm;
-}
-
-#nutriscore_container {
-  width: 16mm;
-  height: auto;
-  bottom: 19mm;
-  position: absolute;
 }
 
 #nutriscore_image {
