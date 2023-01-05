@@ -1,3 +1,5 @@
+import { round } from 'lodash';
+
 export const getFontSize = (text, options) => {
   const [min, max, wordsPerLine = 6, maxLines = 4] = options;
   const wordCount = text.trim().split(" ").length;
@@ -38,3 +40,15 @@ export const getHeatingInstructionOfABrand = (heatingInstructions, brand) => {
 
   return heatingInstructions;
 };
+
+export const getPercentFromWeight = (netWeight) => (perPortion ) => (
+	isNaN(parseFloat(perPortion)) || isNaN(parseFloat(netWeight))
+		? "-"
+		:  round(parseFloat(perPortion) / parseFloat(netWeight) * 100, 1)
+)
+
+export const getKJoules = (kcals) => (
+	isNaN(parseFloat(kcals))
+		? "-"
+		: round(parseFloat(kcals) / 0.23890295761862)
+)
