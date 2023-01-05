@@ -74,6 +74,7 @@
   background-color: coral;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #bottom-right {
@@ -134,6 +135,26 @@
   height: 100%;
 }
 
+#unique-code_container {
+  /* color: #5c5c5c;
+  position: absolute;
+  text-align: center;
+  font-family: "Roboto Mono"; */
+  /* bottom: 4mm; */
+
+  width: 35px;
+  height: 26px;
+
+  font-family: "Roc Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #000000;
+}
+
 /* ---------------- */
 
 #dlc_informations_container {
@@ -181,15 +202,6 @@
 
 #kitchen_address {
   margin-bottom: 1mm;
-}
-
-#unique-code_container {
-  color: #5c5c5c;
-  position: absolute;
-  text-align: center;
-  font-family: "Roboto Mono";
-  bottom: 4mm;
-  font-size: 4.5mm;
 }
 
 #agreement_container {

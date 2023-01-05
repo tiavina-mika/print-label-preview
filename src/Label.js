@@ -10,6 +10,7 @@ import { getHeatingInstructionOfABrand } from "./utils/utils";
 import NutritionInformation from "./components/NutritionInformation";
 import Nutriscore from "./components/Nutriscore";
 import Ecoscore from "./components/Ecoscore";
+import UniqueCode from "./components/UniqueCode";
 
 const Label = (props) => {
   const heatingInstructions = getHeatingInstructionOfABrand(
@@ -46,6 +47,7 @@ const Label = (props) => {
               <Ecoscore
                 ecoscore={props.product.nutritionInformation?.carboneScore}
               />
+              <UniqueCode uniqueCode={props.product.uniqueCode} />
             </div>
             <div id="bottom-right">right</div>
           </div>
