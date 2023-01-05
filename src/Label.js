@@ -11,6 +11,7 @@ import NutritionInformation from "./components/NutritionInformation";
 import Nutriscore from "./components/Nutriscore";
 import Ecoscore from "./components/Ecoscore";
 import UniqueCode from "./components/UniqueCode";
+import KitchenArea from "./components/KitchenArea";
 
 const Label = (props) => {
   const heatingInstructions = getHeatingInstructionOfABrand(
@@ -39,6 +40,7 @@ const Label = (props) => {
               <NutritionInformation
                 nutritionalInfo={props.product.nutritionInformation}
               />
+              <KitchenArea />
             </div>
             <div id="bottom-center">
               <Nutriscore

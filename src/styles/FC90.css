@@ -66,6 +66,9 @@
   width: 110px;
   height: 88px;
   background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 #bottom-center {
@@ -91,22 +94,15 @@
 }
 
 #nutrition_information_container {
-  /* left: 2mm;
-  padding-left: 4mm;
-  width: 23mm;
-  font-size: 1.4mm;
-  text-align: right;
-  position: absolute;
-  bottom: 8.5mm;
-  margin: unset;
-  font-family: "Sailec-Regular"; */
+  width: 110px;
+  height: 35px;
+
   font-family: "Roc Grotesk";
   font-style: normal;
   font-size: 5px;
   line-height: 7px;
   text-align: right;
   color: #000000;
-  height: 35px;
   background-color: #fff;
 }
 
@@ -153,6 +149,26 @@
   text-align: center;
 
   color: #000000;
+}
+
+#kitchen_area_container {
+  width: 100px;
+  height: 49px;
+
+  font-family: "Roc Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5px;
+  text-align: right;
+
+  color: #000000;
+  background: red;
+}
+
+#kitchen_area_container p {
+  line-height: 7px;
+  padding: 0;
+  margin: 0;
 }
 
 /* ---------------- */
