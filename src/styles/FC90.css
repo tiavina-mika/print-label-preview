@@ -88,7 +88,7 @@
 }
 
 #nutrition_information_container {
-  left: 2mm;
+  /* left: 2mm;
   padding-left: 4mm;
   width: 23mm;
   font-size: 1.4mm;
@@ -96,8 +96,27 @@
   position: absolute;
   bottom: 8.5mm;
   margin: unset;
-  font-family: "Sailec-Regular";
+  font-family: "Sailec-Regular"; */
+  font-family: "Roc Grotesk";
+  font-style: normal;
+  font-size: 5px;
+  line-height: 7px;
+  text-align: right;
+  color: #000000;
+  height: 35px;
+  background-color: #fff;
 }
+
+#nutrition_information_container strong {
+  font-weight: 700;
+}
+#nutrition_information_container p {
+  line-height: 7px;
+  padding: 0;
+  margin: 0;
+}
+/* width: 110px;
+height: 35px; */
 
 #nutriton_information_table {
   width: 100%;
