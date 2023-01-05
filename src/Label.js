@@ -4,15 +4,16 @@ import "./styles/preview.css";
 import Logo from "./components/Logo";
 import ProductName from "./components/ProductName";
 import Preparation from "./components/Preparation";
+import HeatingInstruction from "./components/HeatingInstruction";
+import Ingredients from "./components/Ingredients";
+import { getHeatingInstructionOfABrand } from "./utils/utils";
 
-const props = {
-  product: {
-    commercialName:
-      "Penne demi-complet, mijoté de champignons et lardons & chapelure rustique aux cèpes (work in progress)",
-    specialInstruction: "Ce plat se mange froid"
-  }
-};
-const App = () => {
+const Label = (props) => {
+  const heatingInstructions = getHeatingInstructionOfABrand(
+    props.product.heatingInstructions,
+    "FOODCHERI"
+  );
+
   return (
     <main>
       <div className="in">
@@ -23,6 +24,11 @@ const App = () => {
             <Preparation
               specialInstruction={props.product.specialInstruction}
             />
+            <HeatingInstruction
+              heatingInstructions={heatingInstructions}
+              preparation={props.product.preparation}
+            />
+            <Ingredients isBio={props.isBio} ingredients={props.ingredients} />
           </div>
           {/* <ProductName name={props.product.commercialName}/>
             <Preparation specialInstruction={props.product.specialInstruction}/>
@@ -35,4 +41,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Label;
