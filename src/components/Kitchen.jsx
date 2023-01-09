@@ -1,6 +1,6 @@
 const Kitchen = () => {
   return (
-    <article id="kitchen_area_container">
+    <article id="kitchen_area_container" className="product_label">
       <p>Produit dans un atelier utilisant :</p>
       <p>arachides, crustacés, céleri,</p>
       <p>fruit à coque, gluten, lactose,</p>

@@ -58,9 +58,35 @@
   display: flex;
 }
 
-/* #bottom-left, #bottom-right {
-  flex: 1;
-} */
+#product_name_container {
+  font-family: "LTC Globe Gothic";
+  font-style: normal;
+  font-weight: 700;
+  /* font-size: 13px; */
+  line-height: 135%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+#heating_instruction_container p {
+  font-family: "Roc Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+#heating_instruction_container img {
+  margin-right: 2px;
+  width: 10px;
+  height: 10px;
+}
 
 #bottom-left {
   width: 110px;
@@ -154,14 +180,7 @@
 #kitchen_area_container {
   width: 100px;
   height: 49px;
-
-  font-family: "Roc Grotesk";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 5px;
   text-align: right;
-
-  color: #000000;
   background: red;
 }
 
@@ -176,21 +195,25 @@
 }
 
 .product_label {
+  font-family: "Roc Grotesk";
   font-style: normal;
   font-weight: 400;
   font-size: 5px;
   line-height: 7px;
   margin: 0;
   padding: 0;
+  color: #000000;
 }
 
 .product_value {
+  font-family: "Roc Grotesk";
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
   line-height: 10px;
   margin: 0;
   padding: 0;
+  color: #000000;
 }
 
 #agreement_container {
@@ -209,12 +232,13 @@
 }
 
 #preparation_container {
+  font-family: "Roc Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7px;
+  line-height: 8px;
   text-align: center;
-  color: #151858;
-  font-size: 1.9mm;
-  font-family: "Sailec-Regular";
-  margin: 1mm 7mm;
-  height: auto;
+  color: #000000;
 }
 
 #ingredients_container {
@@ -222,5 +246,5 @@
   text-align: center;
   height: auto;
   line-height: 1.5;
-  font-family: "Sailec-Regular";
+  font-family: "Roc Grotesk";
 }

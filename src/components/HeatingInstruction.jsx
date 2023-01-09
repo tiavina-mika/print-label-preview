@@ -1,21 +1,32 @@
 import { minTommss } from "../utils/utils";
 
 const HeatingInstruction = ({ heatingInstructions, preparation }) => {
-  return preparation !== "1" && heatingInstructions?.microwave ? (
+  if (!(preparation !== "1" && heatingInstructions?.microwave)) return null;
+
+  return (
     <article id="heating_instruction_container">
       <p>
-        Micro-ondes :{" "}
-        <strong id="heating_instruction_microwave">
-          {heatingInstructions.microwave.instructions}
-        </strong>
+        <img alt="" src="/img/label/microwave-90.svg" />
+        {heatingInstructions.microwave.instructions}
         &nbsp;(
-        {`${minTommss(heatingInstructions.microwave.duration)}, ${
+        {`${minTommss(heatingInstructions.microwave.duration)} ; ${
           heatingInstructions.microwave.power
         } Watt`}
         )
       </p>
     </article>
-  ) : null;
+  );
 };
+
+// const HeatingInstruction = ({ heatingInstructions, preparation }) => {
+//     return (
+//       <article id="heating_instruction_container">
+//         <p>
+//           <img alt="" src="/img/label/microwave-90.svg" />
+//           Retirez le couvercle avant de réchauffer (2’30 ; 900 Watt)
+//         </p>
+//       </article>
+//     )
+// };
 
 export default HeatingInstruction;

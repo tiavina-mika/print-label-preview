@@ -6,7 +6,7 @@ const NutritionInformation = ({ nutritionalInfo }) => {
       <p>
         <strong>Valeur nutrionnelle pour 100g</strong> - Enérgies
       </p>
-      <p>
+      <p className="product_label">
         {getKJoules(nutritionalInfo.calories)}&nbsp;Kj (
         {nutritionalInfo.calories}&nbsp;Kcal) /Matières grasses{" "}
         {nutritionalInfo.fat}&nbsp;g
@@ -14,11 +14,11 @@ const NutritionInformation = ({ nutritionalInfo }) => {
         dont acide gras saturés {nutritionalInfo.saturatedFattyAcids}
         &nbsp;g/Glucide
       </p>
-      <p>
+      <p className="product_label">
         {nutritionalInfo.carbohydrates}&nbsp;g dont sucres{" "}
         {nutritionalInfo.sugar}&nbsp;g/Protéines
       </p>
-      <p>
+      <p className="product_label">
         {nutritionalInfo.proteins}&nbsp;g/Fibres {nutritionalInfo.fibers}
         &nbsp;g/Sel {nutritionalInfo.salt}&nbsp;g
       </p>
