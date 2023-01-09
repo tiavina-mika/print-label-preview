@@ -14,7 +14,7 @@
   height: 328px; */
   width: calc(90mm - 12px);
   height: calc(90mm - 12px);
-  background-color: red;
+  /* background-color: red; */
   /* align-self: stretch; */
   /* flex: 1; */
   border-radius: 100%;
@@ -45,7 +45,7 @@
 #top {
   width: 305px;
   height: 198px;
-  background-color: green;
+  /* background-color: green; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,9 +242,21 @@
 }
 
 #ingredients_container {
-  margin: 1mm 3mm;
+  /* margin: 1mm 3mm; */
   text-align: center;
-  height: auto;
+  /* height: auto; */
   line-height: 1.5;
   font-family: "Roc Grotesk";
+  /* width: 305px; */
+  height: 111px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#allergens_text {
+  font-weight: 700;
 }
