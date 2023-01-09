@@ -11,7 +11,7 @@ import NutritionInformation from "./components/NutritionInformation";
 import Nutriscore from "./components/Nutriscore";
 import Ecoscore from "./components/Ecoscore";
 import UniqueCode from "./components/UniqueCode";
-import KitchenArea from "./components/KitchenArea";
+import Kitchen from "./components/Kitchen";
 import NetWeight from "./components/NetWeight";
 import DLC from "./components/DLC";
 import Agreement from "./components/Agreement";
@@ -44,7 +44,7 @@ const Label = (props) => {
               <NutritionInformation
                 nutritionalInfo={props.product.nutritionInformation}
               />
-              <KitchenArea />
+              <Kitchen />
             </div>
             <div id="bottom-center">
               <Nutriscore

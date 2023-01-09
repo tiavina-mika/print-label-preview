@@ -1,4 +1,4 @@
-const KitchenArea = () => {
+const Kitchen = () => {
   return (
     <article id="kitchen_area_container">
       <p>Produit dans un atelier utilisant :</p>
@@ -11,4 +11,5 @@ const KitchenArea = () => {
     </article>
   );
 };
-export default KitchenArea;
+
+export default Kitchen;
