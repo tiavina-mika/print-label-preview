@@ -171,6 +171,38 @@
   margin: 0;
 }
 
+.bottom_right_containers {
+  margin-bottom: 4px;
+}
+
+.product_label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5px;
+  line-height: 7px;
+  margin: 0;
+  padding: 0;
+}
+
+.product_value {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+#agreement_container {
+  width: 32.54px;
+  height: 20px;
+}
+
+#address_container {
+  width: 60px;
+  background-color: #fff;
+}
+
 /* ---------------- */
 
 #dlc_informations_container {
@@ -210,22 +242,6 @@
   font-size: 1.2mm;
   font-family: "Sailec-Regular";
   line-height: 128%;
-}
-
-#netweight_container {
-  margin-bottom: 1mm;
-}
-
-#kitchen_address {
-  margin-bottom: 1mm;
-}
-
-#agreement_container {
-  height: 7mm;
-  width: 9mm;
-  position: absolute;
-  right: 20mm;
-  bottom: 8mm;
 }
 
 #product_name_container {

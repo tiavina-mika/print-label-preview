@@ -11,4 +11,5 @@ const Ecoscore = ({ ecoscore }) => {
     </article>
   );
 };
+
 export default Ecoscore;

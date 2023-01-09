@@ -12,6 +12,10 @@ import Nutriscore from "./components/Nutriscore";
 import Ecoscore from "./components/Ecoscore";
 import UniqueCode from "./components/UniqueCode";
 import KitchenArea from "./components/KitchenArea";
+import NetWeight from "./components/NetWeight";
+import DLC from "./components/DLC";
+import Agreement from "./components/Agreement";
+import Address from "./components/Address";
 
 const Label = (props) => {
   const heatingInstructions = getHeatingInstructionOfABrand(
@@ -51,7 +55,20 @@ const Label = (props) => {
               />
               <UniqueCode uniqueCode={props.product.uniqueCode} />
             </div>
-            <div id="bottom-right">right</div>
+            <div id="bottom-right">
+              <NetWeight netWeightKg={props.product.netWeight} />
+              {!props.hideDlc && (
+                <DLC dlc={props.dlc} lotNumber={props.lotNumber} />
+              )}
+
+              <Address />
+              <Agreement
+                number={props.sanitaryApprovalNumber}
+                brand="FC"
+                countryCode={props.countryCode}
+                continentCode={props.continentCode}
+              />
+            </div>
           </div>
         </article>
       </div>
