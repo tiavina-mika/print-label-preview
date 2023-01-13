@@ -181,7 +181,7 @@
   width: 100px;
   height: 49px;
   text-align: right;
-  background: red;
+  /* background: red; */
 }
 
 #kitchen_area_container p {
@@ -249,7 +249,7 @@
   font-family: "Roc Grotesk";
   /* width: 305px; */
   height: 111px;
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -43,6 +43,7 @@ const Label = (props) => {
             <div id="bottom-left">
               <NutritionInformation
                 nutritionalInfo={props.product.nutritionInformation}
+                netWeightKg={props.product.netWeight}
               />
               <Kitchen />
             </div>
