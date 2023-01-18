@@ -1,4 +1,4 @@
-import { getFontSizesByCharCount } from "../utils/utils";
+import { getFontSize } from "../utils/utils";
 
 const getIngredients = (ingredients, isBio) => {
   const ingredientsString = `Ingredients : ${ingredients
@@ -18,20 +18,21 @@ const getIngredients = (ingredients, isBio) => {
   return ingredientsString;
 };
 
+const minMax = [1.5, 2];
+
 const Ingredients = ({ ingredients = [], isBio, legalName }) => {
   const fontSize =
-    getFontSizesByCharCount(getIngredients(ingredients, isBio), 180, [7, 10]) +
-    "px";
-  const lineHeight =
-    getFontSizesByCharCount(getIngredients(ingredients, isBio), 180, [
-      8.5,
-      12
-    ]) + "px";
+    getFontSize(getIngredients(ingredients, isBio), [...minMax, 12, 4]) -
+    (isBio ? 0.1 : 0) +
+    "mm";
 
   return (
     <article id="ingredients_container" className={isBio ? "bio" : ""}>
-      <p style={{ fontSize, lineHeight }}>
-        <strong> {legalName ? legalName + " - " : ""} Ingrédients : </strong>
+      <p style={{ fontSize }}>
+        <strong style={{ fontSize }}>
+          {" "}
+          {legalName ? legalName + " - " : ""} Ingrédients :{" "}
+        </strong>
         {ingredients.map((ingredient, index) => {
           return (
             <span key={index}>

@@ -6,7 +6,6 @@ const SpecialInstructions = ({
   heatingInstructions,
   preparation
 }) => {
-  console.log("cc", getFontSizesByCharCount(specialInstruction, 50, [2, 10]));
   return (
     <article id="special_instruction_container">
       <p
