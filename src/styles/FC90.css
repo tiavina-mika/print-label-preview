@@ -184,32 +184,30 @@
   margin: 0;
 }
 
-#nutriscore_container {
+#bottom #bottom-center #nutriscore_container {
   width: 64px;
   height: 36px;
+  margin-top: 4px;
 }
 
-#ecoscore_container {
+#bottom #bottom-center #ecoscore_container {
+  margin-top: 4px;
   width: 66px;
   height: 32px;
 }
 
-#ecoscore_container img {
+#bottom #bottom-center #ecoscore_container img {
   width: 100%;
   height: 100%;
 }
 
-#unique-code_container {
-  /* color: #5c5c5c;
-  position: absolute;
-  text-align: center;
-  font-family: "Roboto Mono"; */
-  /* bottom: 4mm; */
+#bottom #bottom-center #unique-code_container {
+  margin-top: 4px;
 
   width: 35px;
   height: 26px;
 
-  font-family: "Roc Grotesk";
+  font-family: "Roc Grotesk Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
