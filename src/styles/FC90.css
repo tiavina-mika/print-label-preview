@@ -80,6 +80,11 @@
   color: #000000;
 }
 
+#preparation_container p {
+  padding: 0;
+  margin: 0;
+}
+
 #heating_instruction_container p {
   font-family: "Roc Grotesk";
   font-style: normal;
