@@ -244,6 +244,17 @@
   height: 17px;
 }
 
+#bottom #bottom-right #dlc_container {
+  /* width: 56px; */
+  height: 18px;
+}
+
+#bottom #bottom-right #address_container {
+  width: 100px;
+  height: 14px;
+  background-color: #fff;
+}
+
 .product_label {
   font-family: "Roc Grotesk";
   font-style: normal;
@@ -269,11 +280,6 @@
 #agreement_container {
   width: 32.54px;
   height: 20px;
-}
-
-#address_container {
-  width: 70px;
-  background-color: #fff;
 }
 
 #nutriscore_image {
