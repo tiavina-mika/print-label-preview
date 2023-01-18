@@ -44,7 +44,7 @@
 }
 
 #middle {
-  width: 305px;
+  /* width: 305px; */
   height: 198px;
   background-color: pink;
   display: flex;
@@ -59,19 +59,21 @@
   display: flex;
 }
 
-#product_name_container {
+#middle #product_name_container {
   font-family: "LTC Globe Gothic";
   font-style: normal;
   font-weight: 700;
-  /* font-size: 13px; */
   line-height: 135%;
   display: flex;
   align-items: center;
   text-align: center;
   color: #000000;
+  height: 54px;
+  background-color: slateblue;
+  margin-bottom: 4px;
 }
 
-#special_instruction_container {
+#middle #special_instruction_container {
   font-family: "Roc Grotesk";
   font-style: normal;
   font-weight: 400;
@@ -80,20 +82,21 @@
   color: #000000;
   background-color: aquamarine;
   height: 21px;
+  margin-bottom: 4px;
 }
 
-#special_instruction_container p {
+#middle #special_instruction_container p {
   padding: 0;
   margin: 0;
   line-height: 1.1;
 }
 
-#special_instruction_container p img {
+#middle #special_instruction_container p img {
   margin-right: 4px;
   vertical-align: bottom;
 }
 
-#heating_instruction_container p {
+#middle #heating_instruction_container p {
   font-family: "Roc Grotesk";
   font-style: normal;
   font-weight: 400;
@@ -105,13 +108,13 @@
   margin: 0;
 }
 
-#heating_instruction_container img {
+#middle #heating_instruction_container img {
   margin-right: 2px;
   width: 10px;
   height: 10px;
 }
 
-#ingredients_container {
+#middle #ingredients_container {
   text-align: center;
   font-family: "Roc Grotesk";
   /* width: 305px; */
@@ -120,8 +123,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
+  background-color: slategrey;
+  margin-bottom: 4px;
 }
 
 #bottom-left {
