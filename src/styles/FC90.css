@@ -160,8 +160,8 @@
   flex-direction: column;
 }
 
-#nutrition_information_container {
-  width: 110px;
+#bottom #bottom-left #nutrition_information_container {
+  /* width: 110px; */
   height: 35px;
 
   font-family: "Roc Grotesk";
@@ -171,14 +171,14 @@
   text-align: right;
   color: #000000;
   background-color: #fff;
+  margin-top: 8px;
 }
 
-#nutrition_information_container strong {
+#bottom #bottom-left #nutrition_information_container strong {
   font-weight: 700;
 }
 
-#nutrition_information_container p {
-  line-height: 7px;
+#bottom #bottom-left #nutrition_information_container p {
   padding: 0;
   margin: 0;
 }
@@ -218,14 +218,15 @@
   color: #000000;
 }
 
-#kitchen_area_container {
-  width: 100px;
+#bottom #bottom-left #kitchen_area_container {
+  /* width: 100px; */
   height: 49px;
   text-align: right;
+  margin-top: 4px;
   /* background: red; */
 }
 
-#kitchen_area_container p {
+#bottom #bottom-left #kitchen_area_container p {
   line-height: 7px;
   padding: 0;
   margin: 0;

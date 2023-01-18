@@ -38,16 +38,13 @@ const NutritionInformation = ({ nutritionalInfo, netWeightKg }) => {
     <article id="nutrition_information_container">
       <p>
         <strong>Valeur nutrionnelle pour 100g</strong> - Enérgies
-      </p>
-      <p className="product_label">
+        <br />
         {caloriesInKJ}&nbsp;Kj ({caloriesInKCal}&nbsp;Kcal) /Matières grasses{" "}
         {fat}&nbsp;g dont acide gras saturés {saturatedFattyAcids}
         &nbsp;g/Glucide
-      </p>
-      <p className="product_label">
+        <br />
         {carbohydrates}&nbsp;g dont sucres {sugar}&nbsp;g/Protéines
-      </p>
-      <p className="product_label">
+        <br />
         {proteins}&nbsp;g/Fibres {fibers}
         &nbsp;g/Sel {salt}&nbsp;g
       </p>
