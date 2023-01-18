@@ -150,7 +150,7 @@
 
 #bottom-right {
   width: 100px;
-  height: 80px;
+  /* height: 80px; */
   background-color: cyan;
 }
 
@@ -233,15 +233,12 @@
 
 #bottom #bottom-right #netweight_container {
   margin-top: 8px;
+  height: 17px;
+  width: 76px;
 }
 
 #bottom #bottom-right .bottom_right_containers {
   margin-bottom: 4px;
-}
-
-#bottom #bottom-right #netweight_container #netweight_value {
-  width: 76px;
-  height: 17px;
 }
 
 #bottom #bottom-right #dlc_container {
@@ -255,6 +252,10 @@
   background-color: #fff;
 }
 
+#bottom #bottom-right #agreement_container {
+  width: 32px;
+  height: 20px;
+}
 .product_label {
   font-family: "Roc Grotesk";
   font-style: normal;
@@ -275,11 +276,6 @@
   margin: 0;
   padding: 0;
   color: #000000;
-}
-
-#agreement_container {
-  width: 32.54px;
-  height: 20px;
 }
 
 #nutriscore_image {
