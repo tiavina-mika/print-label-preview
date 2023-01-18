@@ -4,7 +4,6 @@ import "./styles/preview.css";
 import Logo from "./components/Logo";
 import ProductName from "./components/ProductName";
 import SpecialInstructions from "./components/SpecialInstructions";
-import HeatingInstruction from "./components/HeatingInstruction";
 import Ingredients from "./components/Ingredients";
 import { getHeatingInstructionOfABrand } from "./utils/utils";
 import NutritionInformation from "./components/NutritionInformation";
