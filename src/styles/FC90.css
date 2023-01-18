@@ -231,8 +231,17 @@
   margin: 0;
 }
 
-.bottom_right_containers {
+#bottom #bottom-right #netweight_container {
+  margin-top: 8px;
+}
+
+#bottom #bottom-right .bottom_right_containers {
   margin-bottom: 4px;
+}
+
+#bottom #bottom-right #netweight_container #netweight_value {
+  width: 76px;
+  height: 17px;
 }
 
 .product_label {
