@@ -16,7 +16,7 @@ export const getFontSize = (text, options) => {
   return Math.min(max, (maxLines / lineCount) * min);
 };
 
-export const getFontSizeByCharCount = (text, wordCountLimit, options) => {
+export const getFontSizesByCharCount = (text, wordCountLimit, options) => {
   const [min, max] = options;
   const wordCount = text.length;
 
