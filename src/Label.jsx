@@ -27,7 +27,7 @@ const Label = (props) => {
       <div className="in">
         <article>
           <Logo />
-          <div id="top">
+          <div id="middle">
             <ProductName name={props.product.commercialName} />
             {props.product.specialInstruction && (
               <SpecialInstructions

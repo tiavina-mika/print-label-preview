@@ -8188,7 +8188,8 @@ export const data = {
     type: "MAIN_COURSE",
     specialInstruction:
       "Ce plat se mange froid. Versez la sauce Coronation à volonté. ",
-    preparation: "1",
+    preparation: "2",
+    // preparation: "1",
     createdAt: "2019-04-03T10:42:58.592Z",
     updatedAt: "2022-12-07T13:04:47.151Z",
     tva: [{ brand: "FRIGONU", value: 10 }],
@@ -8202,6 +8203,108 @@ export const data = {
         brand: "SEAZON",
         updated_at: 1572863360313,
         exported_at: 1601015504935
+      }
+    ],
+    heatingInstructions: [
+      {
+        brand: "FOODCHERI",
+        value: {
+          microwave: {
+            power: 900,
+            duration: 2.5,
+            instructions: "Retirez le couvercle avant de réchauffer"
+          },
+          oven: {
+            power: 150,
+            duration: 12,
+            instructions: "Transférez dans un plat adapté"
+          },
+          pan: {
+            power: 0,
+            duration: 0,
+            instructions: ""
+          }
+        }
+      },
+      {
+        brand: "SEAZON",
+        value: {
+          microwave: {
+            power: 900,
+            duration: 2.5,
+            instructions: "Soulevez l'opercule et réchauffez"
+          },
+          oven: {
+            power: 150,
+            duration: 12,
+            instructions: "Transférez dans un plat adapté"
+          },
+          pan: {
+            power: 0,
+            duration: 0,
+            instructions: ""
+          }
+        }
+      },
+      {
+        brand: "MONOPRIX",
+        value: {
+          microwave: {
+            power: 900,
+            duration: 2.5,
+            instructions: "Soulevez l'opercule et réchauffez"
+          },
+          oven: {
+            power: 150,
+            duration: 12,
+            instructions: "Transférez dans un plat adapté"
+          },
+          pan: {
+            power: 0,
+            duration: 0,
+            instructions: ""
+          }
+        }
+      },
+      {
+        brand: "FRIGONU",
+        value: {
+          microwave: {
+            power: 900,
+            duration: 2.5,
+            instructions: "Soulevez l'opercule et réchauffez"
+          },
+          oven: {
+            power: 150,
+            duration: 12,
+            instructions: "Transférez dans un plat adapté"
+          },
+          pan: {
+            power: 0,
+            duration: 0,
+            instructions: ""
+          }
+        }
+      },
+      {
+        brand: "SEAZON_BE",
+        value: {
+          microwave: {
+            power: 900,
+            duration: 2.5,
+            instructions: "Soulevez l'opercule et réchauffez"
+          },
+          oven: {
+            power: 150,
+            duration: 12,
+            instructions: "Transférez dans un plat adapté"
+          },
+          pan: {
+            power: 0,
+            duration: 0,
+            instructions: ""
+          }
+        }
       }
     ],
     comments:
@@ -8467,7 +8570,6 @@ export const data = {
       { brand: "FRIGONU", value: 9 },
       { brand: "SEAZON_BE", value: 9 }
     ],
-    heatingInstructions: [],
     instructions: [
       {
         brand: "MONOPRIX",

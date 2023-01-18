@@ -41,9 +41,7 @@ const NutritionInformation = ({ nutritionalInfo, netWeightKg }) => {
       </p>
       <p className="product_label">
         {caloriesInKJ}&nbsp;Kj ({caloriesInKCal}&nbsp;Kcal) /Matières grasses{" "}
-        {fat}&nbsp;g
-        <p></p>
-        dont acide gras saturés {saturatedFattyAcids}
+        {fat}&nbsp;g dont acide gras saturés {saturatedFattyAcids}
         &nbsp;g/Glucide
       </p>
       <p className="product_label">
