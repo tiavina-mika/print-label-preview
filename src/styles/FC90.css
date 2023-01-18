@@ -71,7 +71,7 @@
   color: #000000;
 }
 
-#preparation_container {
+#special_instruction_container {
   font-family: "Roc Grotesk";
   font-style: normal;
   font-weight: 400;
@@ -80,9 +80,10 @@
   color: #000000;
 }
 
-#preparation_container p {
+#special_instruction_container p {
   padding: 0;
   margin: 0;
+  line-height: 1.1;
 }
 
 #heating_instruction_container p {
