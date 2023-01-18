@@ -1,4 +1,4 @@
-import { round } from 'lodash';
+import { round } from "lodash";
 
 export const getFontSize = (text, options) => {
   const [min, max, wordsPerLine = 6, maxLines = 4] = options;
@@ -14,6 +14,17 @@ export const getFontSize = (text, options) => {
   }
 
   return Math.min(max, (maxLines / lineCount) * min);
+};
+
+export const getFontSizeByCharCount = (text, wordCountLimit, options) => {
+  const [min, max] = options;
+  const wordCount = text.length;
+
+  if (wordCount < wordCountLimit) {
+    return max;
+  }
+
+  return min;
 };
 
 export const minTommss = (minutes) => {
@@ -41,14 +52,10 @@ export const getHeatingInstructionOfABrand = (heatingInstructions, brand) => {
   return heatingInstructions;
 };
 
-export const getPercentFromWeight = (netWeight) => (perPortion ) => (
-	isNaN(parseFloat(perPortion)) || isNaN(parseFloat(netWeight))
-		? "-"
-		:  round(parseFloat(perPortion) / parseFloat(netWeight) * 100, 1)
-)
+export const getPercentFromWeight = (netWeight) => (perPortion) =>
+  isNaN(parseFloat(perPortion)) || isNaN(parseFloat(netWeight))
+    ? "-"
+    : round((parseFloat(perPortion) / parseFloat(netWeight)) * 100, 1);
 
-export const getKJoules = (kcals) => (
-	isNaN(parseFloat(kcals))
-		? "-"
-		: round(parseFloat(kcals) / 0.23890295761862)
-)
+export const getKJoules = (kcals) =>
+  isNaN(parseFloat(kcals)) ? "-" : round(parseFloat(kcals) / 0.23890295761862);

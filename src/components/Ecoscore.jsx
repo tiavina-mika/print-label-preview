@@ -2,7 +2,7 @@ const Ecoscore = ({ ecoscore }) => {
   if (!ecoscore) return null;
 
   return (
-    <article id="ecoscore_container" class="ecoscore">
+    <article id="ecoscore_container" className="ecoscore">
       <img
         alt="ecoscore"
         id="ecoscore_image"
