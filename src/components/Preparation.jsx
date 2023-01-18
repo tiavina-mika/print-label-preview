@@ -1,7 +1,7 @@
 const Preparation = ({ specialInstruction }) => {
   return (
     <article id="preparation_container">
-      {specialInstruction ? <p>{specialInstruction}</p> : null}
+      <p>{specialInstruction}</p>
     </article>
   );
 };

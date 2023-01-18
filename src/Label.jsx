@@ -30,9 +30,11 @@ const Label = (props) => {
           <Logo />
           <div id="top">
             <ProductName name={props.product.commercialName} />
-            <Preparation
-              specialInstruction={props.product.specialInstruction}
-            />
+            {props.product.specialInstruction && (
+              <Preparation
+                specialInstruction={props.product.specialInstruction}
+              />
+            )}
             <HeatingInstruction
               heatingInstructions={heatingInstructions}
               preparation={props.product.preparation}

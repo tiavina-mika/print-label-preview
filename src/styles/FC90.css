@@ -30,7 +30,7 @@
   /* margin: auto; */
   /* width: 64px;
   height: 10px; */
-  /* margin-top: 15px; */
+  margin-top: calc(15px - 12px);
   /* height: 10px; */
   background-color: green;
   /* flex: 1; */
@@ -46,7 +46,7 @@
 #top {
   width: 305px;
   height: 198px;
-  /* background-color: green; */
+  background-color: pink;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,10 +63,19 @@
   font-family: "LTC Globe Gothic";
   font-style: normal;
   font-weight: 700;
-  /* font-size: 13px; */
+  font-size: 13px;
   line-height: 135%;
   display: flex;
   align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+#preparation_container {
+  font-family: "Roc Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
   text-align: center;
   color: #000000;
 }
@@ -230,16 +239,6 @@
 #nutriscore_image {
   width: 100%;
   height: 100%;
-}
-
-#preparation_container {
-  font-family: "Roc Grotesk";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 7px;
-  line-height: 8px;
-  text-align: center;
-  color: #000000;
 }
 
 #ingredients_container {
