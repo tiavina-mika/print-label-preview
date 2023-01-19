@@ -96,4 +96,3 @@ export const getIngredients = (ingredients, isBio) => {
 
   return ingredientsString;
 };
-// 65
