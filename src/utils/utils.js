@@ -41,11 +41,13 @@ export const minTommss = (minutes) => {
 
 export const getHeatingInstructionOfABrand = (heatingInstructions, brand) => {
   if (Array.isArray(heatingInstructions)) {
-    if (heatingInstructions.find((elem) => elem.brand === brand)) {
-      return heatingInstructions.find((elem) => elem.brand === brand).value;
-    } else {
-      return null;
-    }
+    const brandInstruction = heatingInstructions.find(
+      (instruction) => instruction.brand === brand
+    );
+    if (!brandInstruction) return null;
+    return heatingInstructions.find(
+      (instruction) => instruction.brand === brand
+    ).value;
   }
 
   return heatingInstructions;
