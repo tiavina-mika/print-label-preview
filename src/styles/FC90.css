@@ -12,7 +12,7 @@
 .in {
   width: calc(90mm - 12px);
   height: calc(90mm - 12px);
-  background-color: red;
+  /* background-color: red; */
   border-radius: 100%;
   overflow: hidden;
 
@@ -25,7 +25,7 @@
 #logo_container {
   text-align: center;
   margin-top: calc(15px - 12px);
-  background-color: green;
+  /* background-color: green; */
 }
 
 #logo {
@@ -37,7 +37,7 @@
 #middle {
   /* width: 305px; */
   height: 198px;
-  background-color: pink;
+  /* background-color: pink; */
 
   flex-direction: column;
   /* justify-content: space-around; */
@@ -54,7 +54,7 @@
   line-height: 135%;
   color: #000000;
   max-height: 54px;
-  background-color: slateblue;
+  /* background-color: slateblue; */
   margin-bottom: 4px;
   max-width: calc(90mm - 150px);
   text-align: center;
@@ -71,7 +71,7 @@
   font-size: 8px;
   text-align: center;
   color: #000000;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   height: 21px;
   margin-bottom: 4px;
 
@@ -88,7 +88,7 @@
   font-family: "Kostic-Grotesk-Regular";
   /* width: 305px; */
   max-height: 111px;
-  background-color: slategrey;
+  /* background-color: slategrey; */
   overflow: hidden;
   margin-bottom: 4px;
 
@@ -142,16 +142,16 @@
 #bottom {
   width: 294px;
   height: 102px;
-  background-color: pink;
+  /* background-color: pink; */
 
   display: flex;
   justify-content: space-between;
 }
 
 #bottom-left {
-  width: 115px;
+  width: 119px;
   height: 88px;
-  background-color: burlywood;
+  /* background-color: burlywood; */
 
   display: flex;
   flex-direction: column;
@@ -161,7 +161,7 @@
 #bottom-center {
   width: 67.69px;
   height: 102.5px;
-  background-color: coral;
+  /* background-color: coral; */
 
   display: flex;
   flex-direction: column;
@@ -169,8 +169,8 @@
 }
 
 #bottom-right {
-  width: 100px;
-  background-color: cyan;
+  width: 94px;
+  /* background-color: cyan; */
 }
 
 #top_part_container {
@@ -186,7 +186,7 @@
   line-height: 7px;
   text-align: right;
   color: #000000;
-  background-color: #fff;
+  /* background-color: #fff; */
   margin-top: 8px;
 }
 
@@ -195,6 +195,19 @@
 }
 
 #bottom #bottom-left #nutrition_information_container p {
+  padding: 0;
+  margin: 0;
+}
+
+#bottom #bottom-left #kitchen_area_container {
+  width: 100px;
+  height: 49px;
+  text-align: right;
+  margin-top: 4px;
+}
+
+#bottom #bottom-left #kitchen_area_container p {
+  line-height: 7px;
   padding: 0;
   margin: 0;
 }
@@ -234,19 +247,6 @@
   color: #000000;
 }
 
-#bottom #bottom-left #kitchen_area_container {
-  width: 100px;
-  height: 49px;
-  text-align: right;
-  margin-top: 4px;
-}
-
-#bottom #bottom-left #kitchen_area_container p {
-  line-height: 7px;
-  padding: 0;
-  margin: 0;
-}
-
 #bottom #bottom-right #netweight_container {
   margin-top: 8px;
   height: 17px;
@@ -264,7 +264,7 @@
 #bottom #bottom-right #address_container {
   width: 100px;
   height: 14px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 #bottom #bottom-right #agreement_container {
