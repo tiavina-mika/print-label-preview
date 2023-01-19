@@ -4,37 +4,28 @@
   /* body { */
   width: 90mm;
   height: 90mm;
-  font: 1em "Sailec-Regular";
+  /* font: 1em "Kostic-Grotesk-Regular"; */
   color: #3c3c3c;
   letter-spacing: normal;
 }
 
 .in {
-  /* width: 328px;
-  height: 328px; */
   width: calc(90mm - 12px);
   height: calc(90mm - 12px);
   background-color: red;
-  /* align-self: stretch; */
-  /* flex: 1; */
   border-radius: 100%;
+  overflow: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 #logo_container {
   text-align: center;
-  /* margin: auto; */
-  /* width: 64px;
-  height: 10px; */
   margin-top: calc(15px - 12px);
-  /* height: 10px; */
   background-color: green;
-  /* flex: 1; */
-  /* align-self: stretch; */
 }
 
 #logo {
@@ -47,36 +38,34 @@
   /* width: 305px; */
   height: 198px;
   background-color: pink;
-  display: flex;
+
   flex-direction: column;
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  display: flex;
   align-items: center;
 }
 
-#bottom {
-  width: 294px;
-  height: 102px;
-  background-color: pink;
-  display: flex;
-  justify-content: space-between;
-}
-
+/* 1 */
 #middle #product_name_container {
-  font-family: "LTC Globe Gothic";
+  font-family: "Globe-Gothic-Bold";
   font-style: normal;
   font-weight: 700;
   line-height: 135%;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #000000;
-  height: 54px;
+  max-height: 54px;
   background-color: slateblue;
   margin-bottom: 4px;
-  max-width: 161px;
+  max-width: calc(90mm - 150px);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
 }
 
+/* 2 */
 #middle #special_instruction_container {
-  font-family: "Roc Grotesk";
+  font-family: "Kostic-Grotesk-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
@@ -85,29 +74,59 @@
   background-color: aquamarine;
   height: 21px;
   margin-bottom: 4px;
+
+  flex-direction: column;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
 }
 
+/* 3 */
+#middle #ingredients_container {
+  max-width: calc(90mm - 28px);
+  text-align: center;
+  font-family: "Kostic-Grotesk-Regular";
+  /* width: 305px; */
+  max-height: 111px;
+  background-color: slategrey;
+  overflow: hidden;
+  margin-bottom: 4px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#middle .splitter {
+  flex: 1;
+}
 #middle #special_instruction_container p {
   padding: 0;
   margin: 0;
   line-height: 1.1;
 }
 
-#middle #special_instruction_container p img {
+#middle #special_instruction_container p.microwave_text {
+  display: flex;
+  align-items: flex-end;
+}
+
+#middle #special_instruction_container p > img {
   margin-right: 4px;
-  vertical-align: bottom;
+  /* vertical-align: top; */
 }
 
 #middle #heating_instruction_container p {
-  font-family: "Roc Grotesk";
+  font-family: "Kostic-Grotesk-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
   line-height: 8px;
+  margin: 0;
+
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 0;
 }
 
 #middle #heating_instruction_container img {
@@ -116,25 +135,24 @@
   height: 10px;
 }
 
-#middle #ingredients_container {
-  text-align: center;
-  font-family: "Roc Grotesk";
-  /* width: 305px; */
-  height: 111px;
-  /* background-color: blue; */
+#middle #ingredients_container #allergens_text {
+  font-weight: 700;
+}
+
+#bottom {
+  width: 294px;
+  height: 102px;
+  background-color: pink;
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* padding-left: 40px;
-  padding-right: 40px; */
-  background-color: slategrey;
-  margin-bottom: 4px;
+  justify-content: space-between;
 }
 
 #bottom-left {
-  width: 110px;
+  width: 115px;
   height: 88px;
   background-color: burlywood;
+
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -144,6 +162,7 @@
   width: 67.69px;
   height: 102.5px;
   background-color: coral;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,22 +170,17 @@
 
 #bottom-right {
   width: 100px;
-  /* height: 80px; */
   background-color: cyan;
 }
 
 #top_part_container {
-  /* padding-top: 3mm; */
-  /* height: 45mm; */
   display: flex;
   flex-direction: column;
 }
 
 #bottom #bottom-left #nutrition_information_container {
-  /* width: 110px; */
   height: 35px;
-
-  font-family: "Roc Grotesk";
+  font-family: "Kostic-Grotesk-Regular";
   font-style: normal;
   font-size: 5px;
   line-height: 7px;
@@ -183,6 +197,11 @@
 #bottom #bottom-left #nutrition_information_container p {
   padding: 0;
   margin: 0;
+}
+
+#bottom #bottom-center #nutriscore_image {
+  width: 100%;
+  height: 100%;
 }
 
 #bottom #bottom-center #nutriscore_container {
@@ -204,17 +223,14 @@
 
 #bottom #bottom-center #unique-code_container {
   margin-top: 4px;
-
   width: 35px;
   height: 26px;
-
-  font-family: "Roc Grotesk Bold";
+  font-family: "Kostic-Grotesk-Regular Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-
   color: #000000;
 }
 
@@ -223,7 +239,6 @@
   height: 49px;
   text-align: right;
   margin-top: 4px;
-  /* background: red; */
 }
 
 #bottom #bottom-left #kitchen_area_container p {
@@ -243,7 +258,6 @@
 }
 
 #bottom #bottom-right #dlc_container {
-  /* width: 56px; */
   height: 18px;
 }
 
@@ -257,8 +271,9 @@
   width: 32px;
   height: 20px;
 }
+
 .product_label {
-  font-family: "Roc Grotesk";
+  font-family: "Kostic-Grotesk-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 5px;
@@ -269,7 +284,7 @@
 }
 
 .product_value {
-  font-family: "Roc Grotesk";
+  font-family: "Kostic-Grotesk-Regular";
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
@@ -277,13 +292,4 @@
   margin: 0;
   padding: 0;
   color: #000000;
-}
-
-#nutriscore_image {
-  width: 100%;
-  height: 100%;
-}
-
-#allergens_text {
-  font-weight: 700;
 }

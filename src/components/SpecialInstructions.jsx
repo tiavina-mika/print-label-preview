@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { getFontSizesByCharCount, minTommss } from "../utils/utils";
 
 const SpecialInstructions = ({
@@ -6,28 +5,22 @@ const SpecialInstructions = ({
   heatingInstructions,
   preparation
 }) => {
+  const fontSize =
+    getFontSizesByCharCount(specialInstruction, 50, [8, 10]) + "px";
   return (
     <article id="special_instruction_container">
-      <p
-        style={{
-          fontSize:
-            getFontSizesByCharCount(specialInstruction, 50, [8, 10]) + "px"
-        }}
-      >
-        {specialInstruction}
-        {preparation !== "1" && heatingInstructions?.microwave && (
-          <Fragment>
-            <br />
-            <img alt="" src="/img/label/microwave-90.svg" />
-            {heatingInstructions.microwave.instructions}
-            &nbsp;(
-            {`${minTommss(heatingInstructions.microwave.duration)} ; ${
-              heatingInstructions.microwave.power
-            } Watt`}
-            )
-          </Fragment>
-        )}
-      </p>
+      <p style={{ fontSize }}>{specialInstruction}</p>
+      {preparation !== "1" && heatingInstructions?.microwave && (
+        <p style={{ fontSize }} className="microwave_text">
+          <img alt="" src="/img/label/microwave-90.svg" />
+          {heatingInstructions.microwave.instructions}
+          &nbsp;(
+          {`${minTommss(heatingInstructions.microwave.duration)} ; ${
+            heatingInstructions.microwave.power
+          } Watt`}
+          )
+        </p>
+      )}
     </article>
   );
 };

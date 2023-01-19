@@ -26,14 +26,22 @@ const Label = (props) => {
           <Logo />
           <div id="middle">
             <ProductName name={props.product.commercialName} />
+            {/* for margin */}
+            <article className="splitter" />
             {props.product.specialInstruction && (
-              <SpecialInstructions
-                specialInstruction={props.product.specialInstruction}
-                heatingInstructions={heatingInstructions}
-                preparation={props.product.preparation}
-              />
+              <>
+                <SpecialInstructions
+                  specialInstruction={props.product.specialInstruction}
+                  heatingInstructions={heatingInstructions}
+                  preparation={props.product.preparation}
+                />
+                {/* for margin */}
+                <article className="splitter" />
+              </>
             )}
             <Ingredients isBio={props.isBio} ingredients={props.ingredients} />
+            {/* for margin */}
+            <article className="splitter" />
           </div>
           <div id="bottom">
             <div id="bottom-left">

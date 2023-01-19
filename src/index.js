@@ -5,6 +5,7 @@ import App from "./App";
 import "./styles/FC90.css";
 import "./styles/base.css";
 import "./styles/preview.css";
+import "./styles/fonts.css";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
