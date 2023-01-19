@@ -72,6 +72,7 @@
   height: 54px;
   background-color: slateblue;
   margin-bottom: 4px;
+  max-width: 161px;
 }
 
 #middle #special_instruction_container {

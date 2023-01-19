@@ -8,7 +8,7 @@ const ProductName = ({ name }) => {
       id="product_name_container"
       style={{ fontSize: getFontSizesByCharCount(name, 30, minMax) + "px" }}
     >
-      {name}
+      {name}.
     </article>
   );
 };
