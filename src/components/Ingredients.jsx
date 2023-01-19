@@ -1,22 +1,4 @@
-import { getFontSizesByCharCount } from "../utils/utils";
-
-const getIngredients = (ingredients, isBio) => {
-  const ingredientsString = `Ingredients : ${ingredients
-    .map((ingredient) => {
-      return `${ingredient.commercialName}${
-        isBio && ingredient.isBio ? "*" : ""
-      }${ingredient.pct > 1.0 ? ` (${ingredient.pct.toFixed(1)}%)` : ""}${
-        ingredient.allergens.length > 0
-          ? `(${ingredient.allergens
-              .map((allergen) => allergen.name)
-              .join(",")})`
-          : ""
-      }`;
-    })
-    .join(",")}`;
-
-  return ingredientsString;
-};
+import { getFontSizesByCharCount, getIngredients } from "../utils/utils";
 
 const Ingredients = ({ ingredients = [], isBio, legalName }) => {
   const fontSize =

@@ -1,6 +1,3 @@
-import "./styles/FC90.css";
-import "./styles/base.css";
-import "./styles/preview.css";
 import Logo from "./components/Logo";
 import ProductName from "./components/ProductName";
 import SpecialInstructions from "./components/SpecialInstructions";

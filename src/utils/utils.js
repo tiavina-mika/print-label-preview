@@ -59,3 +59,41 @@ export const getPercentFromWeight = (netWeight) => (perPortion) =>
 
 export const getKJoules = (kcals) =>
   isNaN(parseFloat(kcals)) ? "-" : round(parseFloat(kcals) / 0.23890295761862);
+
+export const getSpecialInstructionCharCount = ({
+  heatingInstructions,
+  specialInstruction,
+  preparation
+}) => {
+  let charCount = specialInstruction.length;
+
+  if (preparation !== "1" && heatingInstructions?.microwave) {
+    const microwaveDetails = `${minTommss(
+      heatingInstructions.microwave.duration
+    )} ; ${heatingInstructions.microwave.power} Watt`;
+
+    charCount += heatingInstructions.microwave.instructions.length;
+    charCount += microwaveDetails.length;
+  }
+
+  return charCount;
+};
+
+export const getIngredients = (ingredients, isBio) => {
+  const ingredientsString = `Ingredients : ${ingredients
+    .map((ingredient) => {
+      return `${ingredient.commercialName}${
+        isBio && ingredient.isBio ? "*" : ""
+      }${ingredient.pct > 1.0 ? ` (${ingredient.pct.toFixed(1)}%)` : ""}${
+        ingredient.allergens.length > 0
+          ? `(${ingredient.allergens
+              .map((allergen) => allergen.name)
+              .join(",")})`
+          : ""
+      }`;
+    })
+    .join(",")}`;
+
+  return ingredientsString;
+};
+// 65
