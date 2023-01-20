@@ -12,6 +12,7 @@ import NetWeight from "./components/NetWeight";
 import DLC from "./components/DLC";
 import Agreement from "./components/Agreement";
 import Address from "./components/Address";
+import CodeBio from "./components/CodeBio";
 
 const Label = (props) => {
   const heatingInstructions = getHeatingInstructionOfABrand(
@@ -58,6 +59,7 @@ const Label = (props) => {
               <Ecoscore
                 ecoscore={props.product.nutritionInformation?.carboneScore}
               />
+              <CodeBio />
               <UniqueCode uniqueCode={props.product.uniqueCode} />
             </div>
             <div id="bottom-right">

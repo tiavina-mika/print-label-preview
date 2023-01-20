@@ -113,7 +113,6 @@
 
 #middle #special_instruction_container p > img {
   margin-right: 4px;
-  /* vertical-align: top; */
 }
 
 #middle #heating_instruction_container p {
@@ -143,6 +142,7 @@
   width: 294px;
   height: 102px;
   /* background-color: pink; */
+  font-family: "Kostic-Grotesk-Regular";
 
   display: flex;
   justify-content: space-between;
@@ -234,11 +234,21 @@
   height: 100%;
 }
 
+#bottom #bottom-center #codeBio p {
+  width: 24px;
+  height: 5px;
+  font-size: 5px;
+  line-height: 1;
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 #bottom #bottom-center #unique-code_container {
-  margin-top: 4px;
+  /* margin-top: 4px; */
   width: 35px;
   height: 26px;
-  font-family: "Kostic-Grotesk-Regular Bold";
+  font-family: "Kostic-Grotesk-Regular";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
