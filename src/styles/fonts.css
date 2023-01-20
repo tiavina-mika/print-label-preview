@@ -6,13 +6,6 @@
 }
 
 @font-face {
-  font-family: "Kostic-Roc-Grotesk-Regular";
-  src: url("../../fonts/Kostic-Roc-Grotesk-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Kostic-Roc-Grotesk-Medium";
   src: url("../../fonts/Kostic-Roc-Grotesk-Medium.ttf") format("truetype");
   font-weight: normal;
@@ -51,13 +44,6 @@
   font-family: "Globe-Gothic-Bold";
   src: url("../../fonts/Lanston-Type-Company-LTCGlobeGothic-Bold.ttf")
     format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Avenir";
-  src: url("../../fonts/AvenirLTStd-Light.otf");
   font-weight: normal;
   font-style: normal;
 }
