@@ -42,8 +42,8 @@ const NutritionInformation = ({ nutritionalInfo, netWeightKg }) => {
         {caloriesInKJ}&nbsp;Kj ({caloriesInKCal}&nbsp;Kcal) /Matières grasses{" "}
         {fat}&nbsp;g
         <br />
-        dont acide gras saturés {saturatedFattyAcids}
-        &nbsp;g/Glucide
+        dont acides gras saturés {saturatedFattyAcids}
+        &nbsp;g/Glucides
         <br />
         {carbohydrates}&nbsp;g dont sucres {sugar}&nbsp;g/Protéines
         <br />
