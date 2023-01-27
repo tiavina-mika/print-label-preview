@@ -56,7 +56,7 @@
   max-height: 54px;
   /* background-color: slateblue; */
   margin-bottom: 4px;
-  max-width: calc(90mm - 150px);
+  max-width: calc(90mm - 180px);
   text-align: center;
 
   display: flex;
@@ -109,6 +109,7 @@
 #middle #special_instruction_container p.microwave_text {
   display: flex;
   align-items: flex-end;
+  margin-top: 2px;
 }
 
 #middle #special_instruction_container p > img {
