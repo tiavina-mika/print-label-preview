@@ -10,8 +10,8 @@
 }
 
 .in {
-  width: calc(90mm - 12px);
-  height: calc(90mm - 12px);
+  width: calc(90mm - 24px);
+  height: calc(90mm - 24px);
   /* background-color: red; */
   border-radius: 100%;
   overflow: hidden;
