@@ -1,4 +1,4 @@
-import { getFontSizesByCharCount, minTommss } from "../utils/utils";
+import { formatDuration, getFontSizesByCharCount } from "../utils/utils";
 
 const SpecialInstructions = ({
   specialInstruction,
@@ -15,7 +15,7 @@ const SpecialInstructions = ({
           <img alt="" src="/img/label/microwave-90.svg" />
           {heatingInstructions.microwave.instructions}
           &nbsp;(
-          {`${minTommss(heatingInstructions.microwave.duration)} ; ${
+          {`${formatDuration(heatingInstructions.microwave.duration)} ; ${
             heatingInstructions.microwave.power
           } Watt`}
           )

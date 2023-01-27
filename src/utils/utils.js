@@ -39,6 +39,21 @@ export const minTommss = (minutes) => {
   return `${sign}${min ? min + "mn" : ""}${sec ? sec : ""}`.trim();
 };
 
+export const formatDuration = (duration) => {
+  if (duration < 1) {
+    return duration * 60 + " sec";
+  }
+
+  if (Number.isInteger(duration)) {
+    return duration + " min";
+  }
+
+  const min = Math.floor(Math.abs(2.5));
+  const sec = Math.floor((Math.abs(2.5) * 60) % 60);
+
+  return min + "’" + sec;
+};
+
 export const getHeatingInstructionOfABrand = (heatingInstructions, brand) => {
   if (Array.isArray(heatingInstructions)) {
     const brandInstruction = heatingInstructions.find(
