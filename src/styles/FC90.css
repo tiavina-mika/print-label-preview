@@ -19,22 +19,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 #logo_container {
   text-align: center;
-  margin-top: calc(15px - 12px);
+  /* margin-top: calc(15px - 12px); */
   /* background-color: green; */
 }
 
 #logo {
   height: 100%;
   width: 64px;
-  /* width: 100%; */
+  /* background-color: green; */
 }
 
-#middle {
+#top {
   /* width: 305px; */
   height: 198px;
   /* background-color: pink; */
@@ -47,7 +47,7 @@
 }
 
 /* 1 */
-#middle #product_name_container {
+#top #product_name_container {
   font-family: "Globe-Gothic-Bold";
   font-style: normal;
   font-weight: 700;
@@ -64,7 +64,7 @@
 }
 
 /* 2 */
-#middle #special_instruction_container {
+#top #special_instruction_container {
   font-family: "Kostic-Grotesk-Regular";
   font-style: normal;
   font-weight: 400;
@@ -82,7 +82,7 @@
 }
 
 /* 3 */
-#middle #ingredients_container {
+#top #ingredients_container {
   max-width: calc(90mm - 28px);
   text-align: center;
   font-family: "Kostic-Grotesk-Regular";
@@ -97,26 +97,26 @@
   align-items: center;
 }
 
-#middle .splitter {
+#top .splitter {
   flex: 1;
 }
-#middle #special_instruction_container p {
+#top #special_instruction_container p {
   padding: 0;
   margin: 0;
   line-height: 1.1;
 }
 
-#middle #special_instruction_container p.microwave_text {
+#top #special_instruction_container p.microwave_text {
   display: flex;
   align-items: flex-end;
   margin-top: 2px;
 }
 
-#middle #special_instruction_container p > img {
+#top #special_instruction_container p > img {
   margin-right: 4px;
 }
 
-#middle #heating_instruction_container p {
+#top #heating_instruction_container p {
   font-family: "Kostic-Grotesk-Regular";
   font-style: normal;
   font-weight: 400;
@@ -129,13 +129,13 @@
   text-align: center;
 }
 
-#middle #heating_instruction_container img {
+#top #heating_instruction_container img {
   margin-right: 2px;
   width: 10px;
   height: 10px;
 }
 
-#middle #ingredients_container #allergens_text {
+#top #ingredients_container #allergens_text {
   font-weight: 700;
 }
 

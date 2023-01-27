@@ -24,8 +24,11 @@ const Label = (props) => {
     <main>
       <div className="in">
         <article>
-          <Logo />
-          <div id="middle">
+          {/* <Logo /> */}
+          <div id="top">
+            <Logo />
+            {/* for margin */}
+            <article className="splitter" />
             <ProductName name={props.product.commercialName} />
             {/* for margin */}
             <article className="splitter" />
