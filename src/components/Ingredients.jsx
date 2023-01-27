@@ -28,7 +28,7 @@ const Ingredients = ({ ingredients = [], isBio, legalName }) => {
                   (
                   {ingredient.allergens
                     .map((allergen) => allergen.name)
-                    .join(",")}
+                    .join(", ")}
                   )
                 </strong>
               )}
