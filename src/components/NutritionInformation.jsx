@@ -10,12 +10,12 @@ const NutritionInformation = ({ nutritionalInfo, netWeightKg }) => {
   const caloriesInKJ = getNutritionInfoPer100g(
     getKJoules(nutritionalInfo.calories),
     netWeightKg,
-    2
+    0
   );
   const caloriesInKCal = getNutritionInfoPer100g(
     nutritionalInfo.calories,
     netWeightKg,
-    2
+    0
   );
   const fat = getNutritionInfoPer100g(nutritionalInfo.fat, netWeightKg);
   const saturatedFattyAcids = getNutritionInfoPer100g(
