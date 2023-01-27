@@ -1,4 +1,5 @@
 export const data = {
+  legalName: "Some legal name",
   settings: {
     "x-powered-by": true,
     etag: "weak",
@@ -18,7 +19,6 @@ export const data = {
   dlc: "04/01/2023",
   lotNumber: "A",
   name: "Bol gourmand coco citron - 1571",
-  legalName: undefined,
   product: {
     sections: [
       {

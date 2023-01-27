@@ -40,7 +40,11 @@ const Label = (props) => {
                 <article className="splitter" />
               </>
             )}
-            <Ingredients isBio={props.isBio} ingredients={props.ingredients} />
+            <Ingredients
+              isBio={props.isBio}
+              ingredients={props.ingredients}
+              legalName={props.legalName}
+            />
             {/* for margin */}
             <article className="splitter" />
           </div>
