@@ -246,7 +246,6 @@ article strong {
 }
 
 #bottom #bottom-center #unique-code_container {
-  width: 35px;
   height: 26px;
   font-family: "Kostic-Grotesk-Regular";
   font-style: normal;
@@ -255,6 +254,10 @@ article strong {
   line-height: 26px;
   text-align: center;
   color: #000000;
+
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
 }
 
 #bottom #bottom-right #netweight_container {
