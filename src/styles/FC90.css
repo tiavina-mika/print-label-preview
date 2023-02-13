@@ -151,6 +151,8 @@ article strong {
 
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  bottom: 12px;
 }
 
 #bottom-left {
