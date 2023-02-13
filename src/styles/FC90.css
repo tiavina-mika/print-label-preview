@@ -235,8 +235,14 @@ article strong {
   height: 100%;
 }
 
+#bottom #bottom-center #codeBio {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+}
+
 #bottom #bottom-center #codeBio p {
-  width: 24px;
   height: 5px;
   font-size: 5px;
   line-height: 1;
