@@ -22,6 +22,10 @@
   /* justify-content: center; */
 }
 
+article strong {
+  color: #000;
+  font-family: "Kostic-Roc-Grotesk-Bold";
+}
 #logo_container {
   text-align: center;
   /* margin-top: calc(15px - 12px); */
@@ -189,10 +193,6 @@
   color: #000000;
   /* background-color: #fff; */
   margin-top: 8px;
-}
-
-#bottom #bottom-left #nutrition_information_container strong {
-  font-weight: 700;
 }
 
 #bottom #bottom-left #nutrition_information_container p {
