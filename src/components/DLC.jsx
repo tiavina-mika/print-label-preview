@@ -3,7 +3,7 @@ const DLC = ({ dlc, lotNumber }) => {
     <article id="dlc_container" className="bottom_right_containers">
       <p className="product_label">Consommer jusqu'au :</p>
       <p className="product_value">
-        {dlc} <span>({lotNumber})</span>
+        {dlc} <span className="lotNumber">({lotNumber})</span>
       </p>
     </article>
   );
