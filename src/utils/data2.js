@@ -1,17 +1,6 @@
 export const data = {
   legalName: "Some legal name",
-  settings: {
-    "x-powered-by": true,
-    etag: "weak",
-    env: "development",
-    "query parser": "extended",
-    "subdomain offset": 2,
-    "trust proxy": false,
-    views: "E:\\kfc\\kfc-server\\app\\views",
-    "jsonp callback name": "callback",
-    "view engine": "jsx",
-    port: 8080
-  },
+  settings: {},
   type: "RECIPE",
   idProduct: "lWymzXtNVB",
   color: "#000000",
