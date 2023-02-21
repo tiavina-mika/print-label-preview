@@ -112,3 +112,24 @@ export const getIngredients = (ingredients, isBio) => {
 
   return ingredientsString;
 };
+
+export const getSpecialInstructionsText = (
+  specialInstruction,
+  heatingInstructions,
+  maxTextLength = 0
+) => {
+  let text = specialInstruction + " Watt";
+  let isLongInstructionText = false;
+
+  if (heatingInstructions && heatingInstructions.microwave) {
+    const instructions = heatingInstructions.microwave.instructions;
+
+    text += instructions + heatingInstructions.microwave.power;
+    isLongInstructionText = instructions.length > maxTextLength;
+  }
+
+  return {
+    isLongInstructionText,
+    text
+  };
+};

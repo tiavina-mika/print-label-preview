@@ -1,4 +1,8 @@
-import { formatDuration, getFontSizesByCharCount } from "../utils/utils";
+import {
+  formatDuration,
+  getFontSizesByCharCount,
+  getSpecialInstructionsText
+} from "../utils/utils";
 
 const MAX_INSTRUCTIONS_LIMIT = 51;
 
@@ -7,19 +11,15 @@ const SpecialInstructions = ({
   heatingInstructions,
   preparation
 }) => {
-  const { instructions } = heatingInstructions.microwave;
-
   // all text
-  const text =
-    specialInstruction +
-    instructions +
-    heatingInstructions.microwave.power +
-    " Watt";
+  const { text, isLongInstructionText } = getSpecialInstructionsText(
+    specialInstruction,
+    heatingInstructions,
+    MAX_INSTRUCTIONS_LIMIT
+  );
 
   // font size depending on the character count
   const fontSize = getFontSizesByCharCount(text, 50, [8, 10]) + "px";
-
-  const isLongInstructionText = instructions.length > MAX_INSTRUCTIONS_LIMIT;
 
   return (
     <article
@@ -29,33 +29,35 @@ const SpecialInstructions = ({
       }
     >
       <p style={{ fontSize }}>{specialInstruction}</p>
-      {preparation !== "1" && heatingInstructions?.microwave && (
-        <p
-          style={{ fontSize }}
-          className={
-            "microwave_text" +
-            (isLongInstructionText
-              ? " microwave_text_long"
-              : " microwave_text_short")
-          }
-        >
-          <img
-            alt=""
-            src="/img/label/microwave-90.svg"
+      {preparation !== "1" &&
+        heatingInstructions &&
+        heatingInstructions.microwave && (
+          <p
+            style={{ fontSize }}
             className={
-              isLongInstructionText
-                ? "long_instructions_text"
-                : "short_instructions_text"
+              "microwave_text" +
+              (isLongInstructionText
+                ? " microwave_text_long"
+                : " microwave_text_short")
             }
-          />
-          {instructions}
-          &nbsp;(
-          {`${formatDuration(heatingInstructions.microwave.duration)} ; ${
-            heatingInstructions.microwave.power
-          } Watt`}
-          )
-        </p>
-      )}
+          >
+            <img
+              alt=""
+              src="/img/label/microwave-90.svg"
+              className={
+                isLongInstructionText
+                  ? "microwave_text_long"
+                  : "short_instructions_text"
+              }
+            />
+            {heatingInstructions.microwave.instructions}
+            &nbsp;(
+            {`${formatDuration(heatingInstructions.microwave.duration)} ; ${
+              heatingInstructions.microwave.power
+            } Watt`}
+            )
+          </p>
+        )}
     </article>
   );
 };
