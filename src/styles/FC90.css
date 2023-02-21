@@ -12,7 +12,6 @@
 .in {
   width: calc(90mm - 24px);
   height: calc(90mm - 24px);
-  /* background-color: red; */
   border-radius: 100%;
   overflow: hidden;
 
@@ -29,19 +28,16 @@ article strong {
 
 #logo_container {
   text-align: center;
-  /* background-color: green; */
 }
 
 #logo {
   height: 100%;
   width: 64px;
-  /* background-color: green; */
 }
 
 #top {
   /* width: 305px; */
   height: 198px;
-  /* background-color: pink; */
 
   flex-direction: column;
   /* justify-content: space-around; */
@@ -58,7 +54,6 @@ article strong {
   line-height: 135%;
   color: #000000;
   max-height: 54px;
-  /* background-color: slateblue; */
   margin-bottom: 4px;
   max-width: calc(90mm - 180px);
   text-align: center;
@@ -75,7 +70,6 @@ article strong {
   font-size: 8px;
   text-align: center;
   color: #000000;
-  /* background-color: aquamarine; */
   height: 21px;
   margin-bottom: 4px;
 
@@ -85,14 +79,17 @@ article strong {
   align-items: center;
 }
 
+#top #special_instruction_container.special_instruction_container_long {
+  max-width: calc(90mm - 90px);
+}
+
 /* 3 */
 #top #ingredients_container {
-  max-width: calc(90mm - 28px);
+  max-width: calc(90mm - 50px);
+
   text-align: center;
   font-family: "Kostic-Grotesk-Regular";
-  /* width: 305px; */
   max-height: 111px;
-  /* background-color: slategrey; */
   overflow: hidden;
   margin-bottom: 4px;
 
@@ -112,12 +109,23 @@ article strong {
 
 #top #special_instruction_container p.microwave_text {
   display: flex;
-  align-items: flex-end;
   margin-top: 2px;
 }
 
-#top #special_instruction_container p > img {
+#top #special_instruction_container p.microwave_text_short {
+  align-items: flex-end;
+}
+
+#top #special_instruction_container p.microwave_text_long {
+  align-items: flex-start;
+}
+
+#top #special_instruction_container p > img.short_instructions_text {
   margin-right: 4px;
+}
+
+#top #special_instruction_container p > img.long_instructions_text {
+  margin-right: -3px;
 }
 
 #top #heating_instruction_container p {
@@ -143,10 +151,13 @@ article strong {
   font-weight: 700;
 }
 
+#top #ingredients_container #legalName {
+  margin-left: 10px;
+}
+
 #bottom {
   width: 294px;
   height: 102px;
-  /* background-color: pink; */
   font-family: "Kostic-Grotesk-Regular";
 
   display: flex;
@@ -158,7 +169,6 @@ article strong {
 #bottom-left {
   width: 119px;
   height: 88px;
-  /* background-color: burlywood; */
 
   display: flex;
   flex-direction: column;
@@ -168,7 +178,6 @@ article strong {
 #bottom-center {
   width: 67.69px;
   height: 102.5px;
-  /* background-color: coral; */
 
   display: flex;
   flex-direction: column;
@@ -177,7 +186,6 @@ article strong {
 
 #bottom-right {
   width: 94px;
-  /* background-color: cyan; */
 }
 
 #top_part_container {
@@ -193,7 +201,6 @@ article strong {
   line-height: 7px;
   text-align: right;
   color: #000000;
-  /* background-color: #fff; */
 }
 
 #bottom #bottom-left #nutrition_information_container p {
@@ -268,7 +275,7 @@ article strong {
 
 #bottom #bottom-right #netweight_container {
   height: 17px;
-  width: 76px;
+  /* width: 76px; */
 }
 
 #bottom #bottom-right .bottom_right_containers {
@@ -282,7 +289,6 @@ article strong {
 #bottom #bottom-right #address_container {
   width: 100px;
   height: 14px;
-  /* background-color: #fff; */
 }
 
 #bottom #bottom-right #agreement_container {
