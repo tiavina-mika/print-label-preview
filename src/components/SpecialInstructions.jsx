@@ -5,8 +5,13 @@ const SpecialInstructions = ({
   heatingInstructions,
   preparation
 }) => {
-  const fontSize =
-    getFontSizesByCharCount(specialInstruction, 50, [8, 10]) + "px";
+  const text =
+    specialInstruction +
+    heatingInstructions.microwave.instructions +
+    heatingInstructions.microwave.power +
+    " Watt";
+  const fontSize = getFontSizesByCharCount(text, 50, [8, 10]) + "px";
+
   return (
     <article id="special_instruction_container">
       <p style={{ fontSize }}>{specialInstruction}</p>
