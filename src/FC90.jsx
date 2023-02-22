@@ -14,7 +14,7 @@ import Agreement from "./components/Agreement";
 import Address from "./components/Address";
 import CodeBio from "./components/CodeBio";
 
-const Label = (props) => {
+const FC90 = (props) => {
   const heatingInstructions = getHeatingInstructionOfABrand(
     props.product.heatingInstructions,
     "FOODCHERI"
@@ -90,4 +90,4 @@ const Label = (props) => {
   );
 };
 
-export default Label;
+export default FC90;
