@@ -96,11 +96,13 @@ article strong {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 #top .splitter {
   flex: 1;
 }
+
 #top #special_instruction_container p {
   padding: 0;
   margin: 0;

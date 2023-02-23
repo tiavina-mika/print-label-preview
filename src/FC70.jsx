@@ -13,6 +13,7 @@ import DLC from "./components/DLC";
 import Agreement from "./components/Agreement";
 import Address from "./components/Address";
 import CodeBio from "./components/CodeBio";
+import Address70 from "./components/Address70";
 
 const FC70 = (props) => {
   const heatingInstructions = getHeatingInstructionOfABrand(
@@ -78,7 +79,7 @@ const FC70 = (props) => {
                 <DLC dlc={props.dlc} lotNumber={props.lotNumber} />
               )}
 
-              <Address />
+              <Address70 />
               <Agreement
                 number={props.sanitaryApprovalNumber}
                 brand="FC"
