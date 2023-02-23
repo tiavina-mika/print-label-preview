@@ -9,7 +9,8 @@ const MAX_INSTRUCTIONS_LIMIT = 51;
 const SpecialInstructions = ({
   specialInstruction,
   heatingInstructions,
-  preparation
+  preparation,
+  minMaxFonSize = [8, 10]
 }) => {
   // all text
   const { text, isLongInstructionText } = getSpecialInstructionsText(
@@ -19,7 +20,7 @@ const SpecialInstructions = ({
   );
 
   // font size depending on the character count
-  const fontSize = getFontSizesByCharCount(text, 50, [8, 10]) + "px";
+  const fontSize = getFontSizesByCharCount(text, 50, minMaxFonSize) + "px";
 
   return (
     <article

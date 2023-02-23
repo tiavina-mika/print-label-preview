@@ -9,16 +9,17 @@
 .in {
   width: calc(79mm - 8px);
   height: calc(79mm - 8px);
+  background-color: darkcyan;
 }
 
 #logo {
   height: 100%;
   width: 64px;
 }
-
+/* 
 #top {
   height: 116px;
-}
+} */
 
 /* 1 */
 #top #product_name_container {
@@ -45,8 +46,7 @@
 /* 3 */
 #top #ingredients_container {
   max-width: calc(79mm - 50px);
-
-  max-height: 111px;
+  max-height: 116px;
   margin-bottom: 4px;
 }
 
@@ -73,46 +73,53 @@
 }
 
 #bottom {
-  width: 294px;
-  height: 102px;
+  width: 244px;
+  height: 101px;
 
   bottom: 12px;
 }
 
 #bottom-left {
   /* width: 119px; */
-  max-width: 119px;
-  height: 88px;
+  width: 98px;
+  height: auto;
+  /* background-color: red; */
 }
 
 #bottom-center {
-  width: 67.69px;
+  width: 59px;
+  /* width: 67.69px; */
   height: 102.5px;
 
   /* x spacing */
   margin-left: 7px;
   margin-right: 7px;
+  background-color: pink;
 }
 
 #bottom-right {
-  width: 94px;
+  width: 79px;
+  background-color: yellow;
+
 }
 
 #bottom #bottom-left #nutrition_information_container {
-  height: 35px;
+  /* height: 35px; */
   font-size: 5px;
   line-height: 7px;
 }
 
 #bottom #bottom-left #kitchen_area_container {
-  width: 100px;
+  width: 82px;
   height: 49px;
-  margin-top: 4px;
+  margin-top: 10px;
+  /* background-color:blue; */
 }
 
 #bottom #bottom-left #kitchen_area_container p {
   line-height: 7px;
 }
+
 
 #bottom #bottom-center #nutriscore_image {
   width: 100%;
@@ -120,14 +127,15 @@
 }
 
 #bottom #bottom-center #nutriscore_container {
-  width: 64px;
-  height: 36px;
+  width: 55px;
+  /* width: 64px; */
+  height: 30px;
 }
 
 #bottom #bottom-center #ecoscore_container {
   margin-top: 4px;
-  width: 66px;
-  height: 32px;
+  width: 60px;
+  height: 28px;
 }
 
 #bottom #bottom-center #codeBio p {
@@ -138,9 +146,7 @@
 }
 
 #bottom #bottom-center #unique-code_container {
-  height: 26px;
-  font-size: 18px;
-  line-height: 26px;
+  line-height: 18px;
 }
 
 #bottom #bottom-right #netweight_container {
@@ -151,10 +157,6 @@
   margin-bottom: 4px;
 }
 
-#bottom #bottom-right #dlc_container {
-  height: 18px;
-}
-
 #bottom #bottom-right #address_container {
   width: 100px;
   height: 14px;
@@ -163,4 +165,20 @@
 #bottom #bottom-right #agreement_container {
   width: 32px;
   height: 20px;
+}
+
+
+/* .product_label {
+  font-family: "Kostic-Grotesk-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5px;
+  line-height: 7px;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+} */
+
+.product_value {
+  font-size: 9px;
 }

@@ -1,8 +1,8 @@
-import FC90 from "./FC90";
+import FC70 from "./FC70";
 import { data } from "./utils/data";
 
 const App = () => {
-  return <FC90 {...data} />;
+  return <FC70 {...data} />;
 };
 
 export default App;

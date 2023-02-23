@@ -1,14 +1,24 @@
 import { getFontSizesByCharCount, getIngredients } from "../utils/utils";
 
-const Ingredients = ({ ingredients = [], isBio, legalName }) => {
+const Ingredients = ({
+  isBio,
+  legalName,
+  ingredients = [],
+  minMaxFontSize = [7, 10],
+  minMaxLineHeight = [8.5, 12]
+}) => {
   const fontSize =
-    getFontSizesByCharCount(getIngredients(ingredients, isBio), 180, [7, 10]) +
-    "px";
+    getFontSizesByCharCount(
+      getIngredients(ingredients, isBio),
+      180,
+      minMaxFontSize
+    ) + "px";
   const lineHeight =
-    getFontSizesByCharCount(getIngredients(ingredients, isBio), 180, [
-      8.5,
-      12
-    ]) + "px";
+    getFontSizesByCharCount(
+      getIngredients(ingredients, isBio),
+      180,
+      minMaxLineHeight
+    ) + "px";
 
   return (
     <article id="ingredients_container" className={isBio ? "bio" : ""}>
