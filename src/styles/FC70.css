@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap");
 
 #root {
-  /* body { */
   width: 70mm;
   height: 70mm;
 }
@@ -9,37 +8,27 @@
 .in {
   width: calc(70mm - 8px);
   height: calc(70mm - 8px);
-  /* background-color: darkcyan; */
 }
 
 #logo {
-  /* margin-top: 5px; */
   height: 100%;
   width: 51px;
 }
 
 #top {
   max-height: 148px;
-  /* height: 128px; */
-  background-color: pink;
   width: 239px;
 }
 
 #bottom {
-  /* width: 244px; */
   width: 239px;
   height: 101px;
-
-  /* bottom: 10px; */
-  background-color: yellow;
 }
 
-/* 1 */
 #top #product_name_container {
   max-height: 54px;
   margin-bottom: 4px;
   max-width: calc(70mm - 140px);
-  /* background-color: red; */
 }
 
 #top #product_name_container span {
@@ -47,7 +36,6 @@
   line-height: 135%;
 }
 
-/* 2 */
 #top #special_instruction_container {
   height: 21px;
   margin-bottom: 4px;
@@ -57,16 +45,10 @@
   max-width: calc(70mm - 90px);
 }
 
-/* 3 */
 #top #ingredients_container {
-  /* max-width: calc(70mm - 30px); */
   width: 239px;
-  /* height: 116px; */
   max-height: 56px;
-  /* background-color: yellow; */
   margin-bottom: 4px;
-  /* align-items: flex-start; */
-  /* justify-content: flex-start; */
 }
 
 #top #special_instruction_container p.microwave_text {
@@ -92,30 +74,22 @@
 }
 
 #bottom-left {
-  /* width: 119px; */
   width: 98px;
-  /* height: auto; */
-  /* background-color: red; */
 }
 
 #bottom-center {
   width: 59px;
-  /* width: 67.69px; */
   height: 101px;
 
-  /* x spacing */
   margin-left: 4px;
   margin-right: 4px;
-  /* background-color: pink; */
 }
 
 #bottom-right {
   width: 79px;
-  /* background-color: green; */
 }
 
 #bottom #bottom-left #nutrition_information_container {
-  /* height: 35px; */
   font-size: 5px;
   line-height: 7px;
 }
@@ -124,7 +98,6 @@
   width: 82px;
   height: 49px;
   margin-top: 10px;
-  /* background-color:blue; */
 }
 
 #bottom #bottom-left #kitchen_area_container p {
@@ -138,15 +111,12 @@
 
 #bottom #bottom-center #nutriscore_container {
   width: 55px;
-  /* width: 64px; */
   height: 30px;
 }
 
 #bottom #bottom-center #ecoscore_container {
   margin-top: 4px;
   width: 60px;
-  /* height: 28px; */
-  /* background-color:blue; */
 }
 
 #bottom #bottom-center #codeBio p {
@@ -158,7 +128,6 @@
 
 #bottom #bottom-center #unique-code_container {
   line-height: 18px;
-  /* background-color:blue; */
   align-items: flex-end;
 }
 
@@ -179,17 +148,6 @@
   width: 32px;
   height: 20px;
 }
-
-/* .product_label {
-  font-family: "Kostic-Grotesk-Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 5px;
-  line-height: 7px;
-  margin: 0;
-  padding: 0;
-  color: #000000;
-} */
 
 .product_value {
   font-size: 9px;
