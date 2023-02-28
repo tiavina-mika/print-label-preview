@@ -11,7 +11,6 @@ import Kitchen from "./components/Kitchen";
 import NetWeight from "./components/NetWeight";
 import DLC from "./components/DLC";
 import Agreement from "./components/Agreement";
-import Address from "./components/Address";
 import CodeBio from "./components/CodeBio";
 import Address70 from "./components/Address70";
 
