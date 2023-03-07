@@ -24,12 +24,14 @@ const FC70 = (props) => {
     <main>
       <div className="in">
         <article>
-          {/* <Logo /> */}
           <div id="top">
             <Logo />
             {/* for margin */}
             <article className="splitter" />
-            <ProductName name={props.product.commercialName} minMaxFontSize={[10]} />
+            <ProductName
+              name={props.product.commercialName}
+              minMaxFontSize={[10]}
+            />
             {/* for margin */}
             <article className="splitter" />
             {props.product.specialInstruction && (

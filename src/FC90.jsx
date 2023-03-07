@@ -24,7 +24,6 @@ const FC90 = (props) => {
     <main>
       <div className="in">
         <article>
-          {/* <Logo /> */}
           <div id="top">
             <Logo />
             {/* for margin */}
