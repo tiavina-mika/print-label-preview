@@ -29,7 +29,7 @@ const FC70 = (props) => {
             <Logo />
             {/* for margin */}
             <article className="splitter" />
-            <ProductName name={props.product.commercialName} />
+            <ProductName name={props.product.commercialName} minMaxFontSize={[10]} />
             {/* for margin */}
             <article className="splitter" />
             {props.product.specialInstruction && (
